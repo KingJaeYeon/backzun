@@ -1,3 +1,13 @@
+// 입력값이 하나일 경우(문자)
+//input: hello
+//output: hello
+const input = require("fs")
+    .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
+    .toString()
+    .trim();
+
+
+
 //입력값이 하나일 경우(숫자)
 //input: 8
 //output: 8
